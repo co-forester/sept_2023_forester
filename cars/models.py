@@ -4,5 +4,6 @@ class CarModel(models.Model):
     class Meta:
         db_table = 'cars'
     brand = models.CharField(max_length=50)
-    price = models.IntegerField()
+    type = models.CharField(max_length=50)
+    engine = models.IntegerField()
     year = models.IntegerField()
